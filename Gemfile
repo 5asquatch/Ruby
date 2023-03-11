@@ -39,8 +39,14 @@ gem "stimulus-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 
+gem "pg"
+gem "bootstrap", "~> 4.1.1"
+gem "jquery-rails"
+gem 'file_validators'
+gem 'active_storage_validations'
+
 # Use Redis adapter to run Action Cable in production
-# gem "redis", "~> 4.0"
+gem "redis", "~> 4.0"
 
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
@@ -67,12 +73,15 @@ group :development, :test do
   gem "factory_bot_rails"
   gem 'rspec-rails', '~> 6.0.0'
   gem "ffaker"
+  gem 'rails-controller-testing'
 end
 
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
   gem "letter_opener"
+  gem 'spring'
+  gem 'spring-watcher-listen', '~> 2.0.0'
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
 
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
@@ -88,7 +97,3 @@ group :test do
   
 end
 
-gem "jquery-rails"
-gem 'file_validators'
-gem 'active_storage_validations'
-gem "factory_bot", "~> 6.2"
