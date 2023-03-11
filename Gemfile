@@ -24,7 +24,7 @@ gem 'bootstrap-sass', '~> 3.4.1'
 gem 'coffee-rails', '~> 4.2'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
-#gem 'haml', '~> 6.1', '>= 6.1.1'
+gem 'haml', '~> 6.1', '>= 6.1.1'
 
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
 gem "importmap-rails"
