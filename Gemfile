@@ -14,11 +14,10 @@ gem "puma", "~> 5.0"
 
 # Devise for registration/autorization
 gem "devise"
-gem "webpacker",  "~> 5.0"
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
-gem 'bootstrap-sass', '~> 3.4.1'
+
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
