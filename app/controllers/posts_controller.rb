@@ -15,6 +15,9 @@ class PostsController < ApplicationController
         @post.author = current_user.name
         if @post.save
         redirect_to root_path
+        else
+            flash[:error] = "Failed to create post. Please check errors below."
+            render :new
         end
     end
 

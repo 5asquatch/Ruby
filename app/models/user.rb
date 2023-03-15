@@ -2,10 +2,12 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
-  validates :name, uniqueness: { case_sensitive: true }
+  validates :email, presence: true, length: { maximum: 255 }, uniqueness: { case_sensitive: false }       
+  validates :name, uniqueness: { case_sensitive: true}
   validates :name, presence: true
   validates :avatar, file_size: { less_than_or_equal_to: 2.megabytes },
               file_content_type: { allow: ['image/jpeg', 'image/png'] }
+              
 
   has_many :posts, dependent: :destroy   
   has_many :comments, dependent: :destroy
