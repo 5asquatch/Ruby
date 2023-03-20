@@ -16,6 +16,8 @@ gem "puma", "~> 5.0"
 
 # Devise for registration/autorization
 gem "devise"
+gem "mail"
+gem "webpacker"
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
@@ -68,6 +70,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 6.0.0'
   gem "ffaker"
   gem 'rails-controller-testing'
+  gem "simplecov"
 end
 
 group :development do

@@ -3,6 +3,6 @@ FactoryBot.define do
         association :user
         title {FFaker::Lorem.sentence}
         body {FFaker::Lorem.paragraph}
-        photo {Rack::Test::UploadedFile.new (Rails.root.join("app/assets/images/default-avatar.png"))}
+        image {Rack::Test::UploadedFile.new (Rails.root.join("app/assets/images/default-avatar.png"))}
     end
 end

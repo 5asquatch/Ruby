@@ -17,5 +17,10 @@ RSpec.describe Post, type: :model do
             expect(post).to_not be_valid
         end
 
+        it "is not valid without a image" do
+            post = FactoryBot.build(:post, image: nil)
+            expect(post).to_not be_valid
+        end
+
     end
 end 
